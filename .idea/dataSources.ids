@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - school@localhost" uuid="74efb5c4-20f4-445d-8e8d-9d3c8fe0f33f">
+    <database-info product="MySQL" version="5.6.17" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="school"/>
+    <table name="grade" schema="" catalog="school" type="TABLE">
+      <column name="id" sqlType="TINYINT UNSIGNED" precision="3" scale="0" nullable="false" jdbcType="-6" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12"/>
+      <column name="point" sqlType="TINYINT UNSIGNED" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="reg_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="email" unique="true" columns="email"/>
+      <index name="id" unique="true" columns="id"/>
+      <index name="name" unique="true" columns="name"/>
+    </table>
+    <table name="stu" schema="" catalog="school" type="TABLE">
+      <column name="stuid" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12" remarks="5bqP5Y+3"/>
+      <column name="stuname" sqlType="CHAR" precision="50" scale="0" nullable="false" jdbcType="1" remarks="5aeT5ZCN"/>
+      <column name="stusex" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="J+eUtyc=" remarks="5oCn5Yir"/>
+      <column name="stuage" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5bm06b6E"/>
+      <column name="stujg" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12" remarks="57GN6LSv"/>
+      <column name="studept" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12" remarks="57O75Yir"/>
+      <primary-key name="PRIMARY" columns="stuid"/>
+      <index name="stuid" unique="true" columns="stuid"/>
+      <index name="stuname" unique="true" columns="stuname"/>
+    </table>
+  </data-source>
+</component>
